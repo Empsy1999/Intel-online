@@ -42,7 +42,8 @@
     <!-- Slick (carousel) -->
     <link href="assets/vendor/slick/1.8.1/slick.css" rel="stylesheet">
     <link href="assets/vendor/slick/1.8.1/slick-theme-skilltech.css" rel="stylesheet">
-
+    
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CK5T93V47"></script>
     <script>
@@ -296,7 +297,7 @@
                         <div class="row row text-center text-sm-start">
                             <div class="col-12 col-lg-6 sk__flex about-button-col order-2 order-lg-1">
                                 <div class="flex-child mb-3 mb-lg-0">
-                                    <a class="btn btn-outline-light mt-3" href="./assets/Documents/software engineer Resume.pdf" role="button" target="_blank">View Resume</a>
+                                    <a class="btn btn-outline-light mt-3" href="./assets/Documents/Fix mobile and web app resume.pdf" role="button" target="_blank">View Resume</a>
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
@@ -315,91 +316,7 @@
                     <div class="sk__partners-section">
                         <div class="container sk__supercontainer">
                             <div>
-                                <section>
-                                    <head>
-                                        <title>Background Music Example</title>
-                                        <style>
-                                            /* Added CSS for oval-shaped buttons and hover effect */
-                                            button {
-                                                border-radius: 50%; /* Makes the button oval-shaped */
-                                                width: 70px; /* Adjust as needed */
-                                                height: 50px; /* Adjust as needed */
-                                                margin: 5px; /* Adjust as needed */
-                                                transition: background-color 0.3s ease; /* Smooth transition for color change */
-                                            }
                                 
-                                            button:hover {
-                                                background-color: #e4dc09; /* Change to your desired hover color */
-                                            }
-                                        </style>
-                                        <script>
-                                            window.addEventListener('load', function () {
-                                                var audio = document.getElementById('background-music');
-                                                var playBtn = document.getElementById('play-btn');
-                                                var pauseBtn = document.getElementById('pause-btn');
-                                                var nextBtn = document.getElementById('next-btn');
-                                        
-                                                var songs = [
-                                                    "../Home Page/assets/Music/MoonDeity - NEON BLADE.mp3",
-                                                    "../Home Page/assets/Music/2 Chainz  Wiz Khalifa  We Own It Fast  Furious  Official Lyric Video.mp3",
-                                                    "../Home Page/assets/Music/Phonk   Alban Chela  Indian Phonk Magic Phonk Release.mp3",
-                                                    "../Home Page/assets/Music/Chris Classic  Here We Go ft Eminem Godzilla vs Kong Trailer Music 2021 Remix.mp3",
-                                                    "../Home Page/assets/Music/Xcho      Tik Tok Remix.mp3",
-                                                ];
-                                        
-                                                var currentSongIndex = 0;
-                                        
-                                                audio.volume = 0.9; // set the volume to 90%
-                                        
-                                                playBtn.addEventListener('click', function () {
-                                                    if (audio.paused) {
-                                                        audio.src = songs[currentSongIndex];
-                                                        audio.load(); // Load the new audio source
-                                                        audio.play();
-                                                    }
-                                                });
-                                        
-                                                pauseBtn.addEventListener('click', function () {
-                                                    audio.pause();
-                                                });
-                                        
-                                                nextBtn.addEventListener('click', function () {
-                                                    // Move to the next song and loop back to the first song if reached the end
-                                                    currentSongIndex = (currentSongIndex + 1) % songs.length;
-                                                    audio.src = songs[currentSongIndex];
-                                                    audio.load(); // Load the new audio source
-                                                    audio.play();
-                                                });
-                                        
-                                                audio.addEventListener('ended', function () {
-                                                    // Move to the next song and loop back to the first song if reached the end
-                                                    currentSongIndex = (currentSongIndex + 1) % songs.length;
-                                                    audio.src = songs[currentSongIndex];
-                                                    audio.load(); // Load the new audio source
-                                                    audio.play();
-                                        
-                                                    // Check if it's the last song, and reset the index to restart the loop
-                                                    if (currentSongIndex === songs.length - 1) {
-                                                        currentSongIndex = 0;
-                                                    }
-                                                });
-                                        
-                                                // start playing the music
-                                                audio.play();
-                                            });
-                                        </script>
-                                    </head>
-                                    <body>
-                                        <audio id="background-music" loop>
-                                            <!-- The source will be dynamically set in the script -->
-                                            Your browser does not support the audio element.
-                                        </audio>
-                                
-                                        <button id="play-btn">Play</button>
-                                        <button id="pause-btn">Pause</button>
-                                        <button id="next-btn">Next</button>
-                                    </body>
-                                </section>
                                 
                                 <div class="row">
                                     <div class="col text-center text-sm-start">
@@ -426,6 +343,14 @@
                                     </div>
                                 </div>
                                 
+                                <!--
+                                <div class="row sk__deco-row dark-shade-7-bg dark-shade-5-border" style="width: 100%; justify-content: center;">
+                                     Centered Button inside an anchor tag linking to a page 
+                                    <div class="col-auto">
+                                        <a href="./Web Showcase.html" class="btn btn-primary">View Web Projects</a>
+                                    </div>
+                                </div>-->
+                                
                         </div>
                     </div>
                     <!-- /.sk__partners-section -->
@@ -433,12 +358,6 @@
                 </section>
                 <!-- /.sk__about-us-section -->
 
-
-                <section class="sk__deco-row-section">
-                    <div class="container-fluid">
-                        <div class="row sk__deco-row dark-shade-7-bg dark-shade-5-border"></div>
-                    </div>
-                </section>
 
 
                 <!-- Portfolio Section
@@ -912,7 +831,13 @@
                                           I invite you to explore my portfolio documents for a closer look at my skills and accomplishments.
                                          Eager to contribute innovative solutions and excellence to your projects.</p>
                                          <a class="btn btn-outline-light mt-3" href="./assets/Documents/Mobile app documents.pdf" role="button" target="_blank">View Mobile Document</a>
-                                         <a class="btn btn-outline-light mt-3" href="./assets/Documents/Web app documents.pdf" role="button" target="_blank">View Web Document</a>
+                                         <!--
+                                         <a class="btn btn-outline-light mt-3" href="./assets/Documents/Mobile app documents.pdf" role="button" target="_blank">View Certificates</a>    
+                                         -->
+
+
+                                         
+                                        
                                 </div>
                             </div>
                         </div>
@@ -1079,7 +1004,7 @@
                         <div class="row text-center">
                             <div class="col sk__heading-spacer-l">
                                 <div class="cover-text-wrapper">
-                                    <h1 class="super-heading sk__clipped-text sk__gradient-back-v1 animated-element">Development Process -></h1>
+                                    <h1 class="super-heading sk__clipped-text sk__gradient-back-v1 animated-element">Web Development Projects -></h1>
                                 </div>
                             </div>
                         </div>
@@ -1087,138 +1012,99 @@
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="sk__iconbox">
                                     <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-diamond1 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
+                                        <span class="sk__flex-center sk__iconbox-icon">
+                                            <span class="icon-diamond1 sk__gradient-fancy-text"></span>
+                                        </span>
+                                        <span class="sk__iconbox-icon-dash"></span>
+                                    </a>
                                     <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>1. Requirement Gathering and Analysis:</h5>
+                                        <h5>1. Speech Improvement Center HR Development and Employee Clock Attendance Panel </h5>
                                     </a>
                                     <p><ul>
-                                        <li>Collaborative Sessions: Engage stakeholders to gather and analyze project requirements collectively.</li>
-                                        <li>Documentation: Create a detailed requirement document specifying functionality, constraints, and expectations.</li>
+                                        <li>Tech Stacks used: PHP, Cpanel, SQL</li>
+                                        
                                       </ul></p>
+                                    <!-- Button to open video in new tab -->
+                                    <a href="./assets/Video Web/HR portal And Employee Attendance portal for SIC.mp4" class="btn btn-primary unique-btn" target="_blank">Watch Overview</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="sk__iconbox">
                                     <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-power-off sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
+                                        <span class="sk__flex-center sk__iconbox-icon">
+                                            <span class="icon-diamond1 sk__gradient-fancy-text"></span>
+                                        </span>
+                                        <span class="sk__iconbox-icon-dash"></span>
+                                    </a>
                                     <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>2. System Design:</h5>
+                                        <h5>2. Facial Recognition Lie Detection </h5>
                                     </a>
                                     <p><ul>
-                                        <li>Collaborative Design Sessions: Work closely with design teams and stakeholders to create system architecture and design.</li>
-                                        <li>Documentation: Develop detailed system design documents, including architectural diagrams and interface specifications.</li>
+                                        <li>Tech Stacks used: Python, Flask, SQL</li>
+                                        
                                       </ul></p>
+                                    <!-- Button to open video in new tab -->
+                                    <a href="./assets/Video Web/Facial Recognition Lie detection.mp4" class="btn btn-primary unique-btn" target="_blank">Watch Overview</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="sk__iconbox">
                                     <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-headphones1 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
+                                        <span class="sk__flex-center sk__iconbox-icon">
+                                            <span class="icon-diamond1 sk__gradient-fancy-text"></span>
+                                        </span>
+                                        <span class="sk__iconbox-icon-dash"></span>
+                                    </a>
                                     <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>3. Prototyping:</h5>
+                                        <h5>3. Speech Improvement Center Database Management and Landing page </h5>
                                     </a>
                                     <p><ul>
-                                        <li>Collaborative Prototyping: Build prototypes collaboratively to validate design concepts.</li>
-                                        <li>Documentation: Document the prototype to gather feedback and make necessary adjustments.</li>
+                                        <li>Tech Stacks used: Wordpress, PHP, SQL</li>
+                                        
                                       </ul></p>
+                                    <!-- Button to open video in new tab -->
+                                    <a href="./assets/Video Web/Speech Improvement Center.mp4" class="btn btn-primary unique-btn" target="_blank">Watch Overview</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="sk__iconbox">
                                     <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-lab1 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
+                                        <span class="sk__flex-center sk__iconbox-icon">
+                                            <span class="icon-diamond1 sk__gradient-fancy-text"></span>
+                                        </span>
+                                        <span class="sk__iconbox-icon-dash"></span>
+                                    </a>
                                     <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>4. Agile Development:</h5>
+                                        <h5>4. Digital Polygraph tool for Lie Detection Course</h5>
                                     </a>
                                     <p><ul>
-                                        <li>Collaboration in Sprints: Adopt Agile methodologies for iterative development, fostering regular collaboration with stakeholders.</li>
-                                        <li>Documentation: Maintain Agile documentation, including user stories, sprint backlogs, and release plans.</li>
+                                        <li>Tech Stacks used: C#, Unity, Blender 3D modelling, Html,css,js</li>
+                                        
                                       </ul></p>
+                                    <!-- Button to open video in new tab -->
+                                    <a href="./assets/Video Web/Digital Polygraph tool for lie Detection Course.mp4" class="btn btn-primary unique-btn" target="_blank">Watch Overview</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6 col-lg-4">
                                 <div class="sk__iconbox">
                                     <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-bulb sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
+                                        <span class="sk__flex-center sk__iconbox-icon">
+                                            <span class="icon-diamond1 sk__gradient-fancy-text"></span>
+                                        </span>
+                                        <span class="sk__iconbox-icon-dash"></span>
+                                    </a>
                                     <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>5. Version Control and Continuous Integration:</h5>
+                                        <h5>5. Ishaan Admin Dashboard Appointment and User Management System for Mobile App Ishaan</h5>
                                     </a>
                                     <p><ul>
-                                        <li>Collaborative Code Management: Utilize version control systems like Git for collaborative code development.</li>
-                                        <li>Documentation: Maintain version-controlled documentation and adopt continuous integration practices for seamless collaboration.</li>
+                                        <li>Tech Stacks Javascript, React Native, Firebase</li>
+                                        
                                       </ul></p>
+                                    <!-- Button to open video in new tab -->
+                                    <a href="./assets/Video Web/Ishaan LMS Web Admin Dashboard  built in React.mp4" class="btn btn-primary unique-btn" target="_blank">Watch Overview</a>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="sk__iconbox">
-                                    <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-shield1 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-                                    <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>6. Testing and Quality Assurance:</h5>
-                                    </a>
-                                    <p><ul>
-                                        <li>Collaborative Testing: Engage both development and testing teams in the testing process.</li>
-                                        <li>Documentation: Develop comprehensive test plans, test cases, and documentation for quality assurance.</li>
-                                      </ul></p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="sk__iconbox">
-                                    <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-fire2 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-                                    <a class="sk__iconbox-text-link gradient-links-bright">
-                                        <h5>7. Documentation and Knowledge Transfer:</h5>
-                                    </a>
-                                    <p><ul>
-                                        <li>Collaborative Documentation: Involve all team members in documenting code, processes, and best practices.</li>
-                                        <li>Knowledge Transfer Sessions: Facilitate sessions to transfer knowledge among team members for efficient collaboration.</li>
-                                      </ul></p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="sk__iconbox">
-                                    <a class="sk__iconbox-icon-link">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-cube sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-                                    <a class="sk__iconbox-text-link gradient-links-bright" >
-                                        <h5>8. Deployment and Release Management:</h5>
-                                    </a>
-                                    <p><ul>
-                                        <li>Collaborative Deployment Planning: Collaborate on deployment plans to ensure smooth transitions.</li>
-                                        <li>Documentation: Maintain release notes and documentation for each deployment.</li>
-                                      </ul></p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-lg-4">
-                                <div class="sk__iconbox">
-                                    <a class="sk__iconbox-icon-link" href="page-service-item.html">
-										<span class="sk__flex-center sk__iconbox-icon"><span class="icon-pen2 sk__gradient-fancy-text"></span></span>
-										<span class="sk__iconbox-icon-dash"></span>
-									</a>
-                                    <a class="sk__iconbox-text-link gradient-links-bright" >
-                                        <h5>9. Post-Implementation Support and Continuous Improvement:</h5>
-                                    </a>
-                                    <p><ul>
-                                        <li>Collaborative Support Structure: Establish collaborative channels for post-implementation support and issue resolution.</li>
-                                        <li>Continuous Improvement Sessions: Regularly conduct sessions to analyze feedback, identify areas for improvement, and plan future iterations.</li>
-                                      </ul></p>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </section>
@@ -1235,7 +1121,7 @@
                                     <span class="sk__warped-text">Lets Work Together!</span>
                                 </div>
                                 <h3><strong>Developer at your service</strong></h3>
-                                <a class="btn btn-outline-light mt-3" href="./assets/Documents/Mobile App Developer.pdf" role="button" target="_blank">View Resume</a>
+                                <a class="btn btn-outline-light mt-3" href="./assets/Documents/Fix mobile and web app resume.pdf" role="button" target="_blank">View Resume</a>
                             </div>
                         </div>
                     </div>
